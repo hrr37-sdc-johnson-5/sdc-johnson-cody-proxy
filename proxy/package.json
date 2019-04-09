@@ -1,0 +1,11 @@
+{
+  "name": "fec-proxy",
+  "version": "1.0.0",
+  "description": "Ana's proxy server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
