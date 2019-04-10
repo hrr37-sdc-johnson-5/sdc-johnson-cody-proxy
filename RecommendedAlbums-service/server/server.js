@@ -9,7 +9,8 @@ app.use(cors());
 
 app.use(parser.json());
 
-app.use(express.static('client/dist'));
+app.use('/', express.static('client/dist'));
+app.use('/:id', express.static('client/dist'));
 
 app.use('/api', router);
 
