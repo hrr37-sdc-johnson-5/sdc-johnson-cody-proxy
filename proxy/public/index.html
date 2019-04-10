@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="/style.css"> -->
-    <title>Bandland</title>
-  </head>
-  <body>
-    <div id="rec-albums"></div>
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="http://localhost:3001/bundle.js"></script>
-    <script>
-        ReactDOM.render(
-          React.createElement(RecommendedAlbumsApp),
-          document.getElementById('rec-albums')
-        );
-    </script>
 
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="/style.css"> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:3001/reset.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:3001/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://localhost:3003/style.css">
+  <title>Bandland</title>
+</head>
 
-  </body>
+<body>
+  <div id="music"></div>
+  <div id="support"></div>
+  <div id="rec-albums"></div>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="http://localhost:3001/bundle.js"></script>
+  <script src="http://localhost:3002/bundle.js"></script>
+  <script src="http://localhost:3003/bundle.js"></script>
+  <script>
+    ReactDOM.render(
+      React.createElement(Music),
+      document.getElementById('music')
+    );
+    ReactDOM.render(
+      React.createElement(SupportSection),
+      document.getElementById('support')
+    );
+    ReactDOM.render(
+      React.createElement(RecommendedAlbumsApp),
+      document.getElementById('rec-albums')
+    );
+  </script>
+</body>
+
 </html>
