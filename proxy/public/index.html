@@ -10,44 +10,66 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="http://localhost:3003/style.css">
   <link rel="stylesheet" type="text/css" href="http://localhost:3000/search.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:3000/main-styles.css">
 
   <title>Bandland</title>
 </head>
 
-<body>
+<body style='background: #E9D3B3'>
+  <!-- Nav-bar -->
   <header class="nav-bar">
-    <div>
-      <img></img>
-      <div>
-        <input type="text" placeholder="Search and discover music">
-        <button class="search-btn" type="button">
-          <img class="search-img" src="http://cdn.onlinewebfonts.com/svg/img_469993.png">
-        </button>
+    <div class="left-nav-bar">
+      <img class="logo" src="https://s3.us-east-2.amazonaws.com/album-art-bandland/bandland-logo.png">
+      <div class="search-container">
+        <input class="search-input"" type=" text" placeholder="Search and discover music">
+        <img class="search-img" src="http://cdn.onlinewebfonts.com/svg/img_469993.png">
       </div>
-
     </div>
-
+    <div class="right-nav-bar">
+      <div class="sign-up">
+        <span>sign up</span>
+      </div>
+      <div class="log-in">
+          <span>log in</span>
+      </div>
+    </div>
   </header>
-  <div id="music"></div>
-  <div id="support"></div>
-  <div id="rec-albums"></div>
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-  <script src="http://localhost:3001/bundle.js"></script>
-  <script src="http://localhost:3002/bundle.js"></script>
-  <script src="http://localhost:3003/bundle.js"></script>
+
+  <!-- Main Container -->
+  <div id="mainContainer">
+    <div class="gradient-divider"></div>
+    <div id="mediaPlayer"></div>
+    <div>
+      <img class="mainAlbumArt" height="350px" width="350px"
+        src="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/supportersPictures/albumart.jpg">
+      <br>
+      <div class="underArtLinks">
+        <a class="share" href="">Share / Embed</a>
+        <a class="wishlist" href="">Wishlist</a>
+      </div>
+      <div class="supportSection" id="fans"></div>
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+    <script src="http://localhost:3003/bundle.js"></script>
+    <script src="http://localhost:3001/bundle.js"></script>
+    <script>
+      ReactDOM.render(
+        React.createElement(Music),
+        document.getElementById("mediaPlayer")
+      );
+      ReactDOM.render(
+        React.createElement(SupportSection),
+        document.getElementById("fans")
+      );
+    </script>
+  </div>
+  <div id="recommended"></div>
   <script>
     ReactDOM.render(
-      React.createElement(Music),
-      document.getElementById('music')
-    );
-    ReactDOM.render(
-      React.createElement(SupportSection),
-      document.getElementById('support')
-    );
-    ReactDOM.render(
       React.createElement(RecommendedAlbumsApp),
-      document.getElementById('rec-albums')
+      document.getElementById("recommended")
     );
   </script>
 </body>
