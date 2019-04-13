@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <!-- <link rel="stylesheet" href="/style.css"> -->
 
-  <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:3001/reset.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:3001/main.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://s3.us-east-2.amazonaws.com/album-art-bandland/reset.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://s3.us-east-2.amazonaws.com/album-art-bandland/main.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="http://localhost:3003/style.css">
+  <link rel="stylesheet" type="text/css" href="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/style.css">
   <link rel="stylesheet" type="text/css" href="http://localhost:3000/search.css">
   <link rel="stylesheet" type="text/css" href="http://localhost:3000/main-styles.css">
 
@@ -40,20 +40,24 @@
     <div class="gradient-divider"></div>
     <div id="mediaPlayer"></div>
     <div>
-      <img class="mainAlbumArt" height="350px" width="350px"
-        src="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/supportersPictures/albumart.jpg">
-      <br>
-      <div class="underArtLinks">
-        <a class="share" href="">Share / Embed</a>
-        <a class="wishlist" href="">Wishlist</a>
+      <img class="mainAlbumArt" src="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/supportersPictures/albumart.jpg">
+        <div class="underArtLinks">
+          <span>
+            <img class="share-img" src="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/supportersPictures/share.png">
+          </span>
+          <a class="share" href="">Share / Embed</a>
+          <span>
+            <img class="heart-img" src="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/supportersPictures/heart.png">
+          </span>
+          <a class="wishlist" href="">Wishlist</a>
+        </div>
+        <div class="supportSection" id="fans"></div>
       </div>
-      <div class="supportSection" id="fans"></div>
-    </div>
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="http://localhost:3002/bundle.js"></script>
-    <script src="http://localhost:3003/bundle.js"></script>
-    <script src="http://localhost:3001/bundle.js"></script>
+    <script src="https://s3.amazonaws.com/namfecproject/bundle.js"></script>
+    <script src="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/bundle.js"></script>
+    <script src="https://s3.us-east-2.amazonaws.com/album-art-bandland/bundle.js"></script>
     <script>
       ReactDOM.render(
         React.createElement(Music),

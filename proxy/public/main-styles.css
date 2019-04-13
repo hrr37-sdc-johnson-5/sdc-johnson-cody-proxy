@@ -29,6 +29,8 @@
 
 .mainAlbumArt {
   padding-top: 25px;
+  height: 350px;
+  width: 350px;
 }
 
 .share {
@@ -69,4 +71,16 @@
 .more {
   margin-top: 10px;
   margin-bottom: 15px;
+}
+
+.share-img {
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+}
+
+.heart-img {
+  height: 11px;
+  width: 11px;
+  cursor: pointer;
 }

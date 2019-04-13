@@ -70,7 +70,7 @@
 }
 
 .right-nav-bar {
-  color: white;
+  color: #AFAFAD;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -79,7 +79,7 @@
 }
 
 .sign-up:hover, .log-in:hover {
-  background-color: #555353
+  background-color: #424141
 }
 
 .sign-up, .log-in {
