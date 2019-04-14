@@ -1,10 +1,12 @@
-
-#mainContainer {
+.outer-container {
   position: relative;
   padding-top: 50px;
   margin: 0 auto;
   background: #3858AD;
   width: 800px;
+}
+
+#mainContainer {
   min-height: 120vh;
   display: flex;
 }

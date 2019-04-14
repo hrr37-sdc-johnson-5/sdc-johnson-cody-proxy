@@ -1,5 +1,7 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import RecommendedAlbums from './components/RecommendedAlbums.jsx';
+import Tags from './components/Tags.jsx';
 
 
 class RecommendedAlbumsApp extends React.Component {
@@ -44,6 +46,10 @@ class RecommendedAlbumsApp extends React.Component {
   render() {
     return (
       <div>
+        {ReactDOM.createPortal(
+          <Tags tags={this.state.albumTags}/>,
+          document.getElementById("tags")
+        )}
         <div className="recommended-module">
           <div className="main-container">
             <p className="recommended-title">If you like {this.state.artist}, you may also like:</p>

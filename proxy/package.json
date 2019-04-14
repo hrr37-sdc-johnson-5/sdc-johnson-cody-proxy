@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "gulp": "^4.0.0",
+    "gulp-awspublish": "^4.0.0",
     "morgan": "^1.9.1",
     "path": "^0.12.7",
     "react": "^16.8.6",

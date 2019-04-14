@@ -1,0 +1,20 @@
+.tags-container {
+ margin: 10px 10px;
+ padding: 25px 10px;
+
+}
+
+.tags-title {
+  font: bold 16px Helvetica Neue, sans-serif;
+  padding-bottom: 10px;
+  color: #F8EAEB;
+}
+
+.tag-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tag-link {
+  color: #6591e2;
+}
