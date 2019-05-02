@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <!-- <link rel="stylesheet" href="/style.css"> -->
 
-  <link rel="stylesheet" type="text/css" media="screen"
-    href="https://s3.us-east-2.amazonaws.com/album-art-bandland/reset.css">
-  <link rel="stylesheet" type="text/css" media="screen"
-    href="https://s3.us-east-2.amazonaws.com/album-art-bandland/main.css">
+  <!-- <link rel="stylesheet" type="text/css" media="screen"
+    href="https://s3.us-east-2.amazonaws.com/album-art-bandland/reset.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" media="screen"
+    href="https://s3.us-east-2.amazonaws.com/album-art-bandland/main.css"> -->
+  <link rel="stylesheet" type="text/css" href="http://ec2-54-67-59-13.us-west-1.compute.amazonaws.com:3003/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/style.css">
-  <link rel="stylesheet" type="text/css" href="https://s3.us-east-2.amazonaws.com/album-art-bandland/search.css">
-  <link rel="stylesheet" type="text/css" href="https://s3.us-east-2.amazonaws.com/album-art-bandland/main-styles.css">
-  <link rel="stylesheet" type="text/css" href="https://s3.us-east-2.amazonaws.com/album-art-bandland/tags.css">
+  <link rel="stylesheet" type="text/css" href="./main-styles.css">
+  <link rel="stylesheet" type="text/css" href="./search.css">
+  <link rel="stylesheet" type="text/css" href="./tags.css">
 
   <title>Bandland</title>
 </head>
@@ -22,7 +22,7 @@
   <!-- Nav-bar -->
   <header class="nav-bar">
     <div class="left-nav-bar">
-      <img class="logo" src="https://s3.us-east-2.amazonaws.com/album-art-bandland/bandland-logo.png">
+      <!-- <img class="logo" src="https://s3.us-east-2.amazonaws.com/album-art-bandland/bandland-logo.png"> -->
       <div class="search-container">
         <input class="search-input"" type=" text" placeholder="Search and discover music">
         <img class="search-img" src="http://cdn.onlinewebfonts.com/svg/img_469993.png">
@@ -44,7 +44,7 @@
     <div class="gradient-divider"></div>
     <div id="mediaPlayer"></div>
     <div>
-      <img class="mainAlbumArt"
+      <!-- <img class="mainAlbumArt"
         src="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/supportersPictures/albumart.jpg">
       <div class="underArtLinks">
         <span>
@@ -55,7 +55,7 @@
         <span>
           <img class="heart-img"
             src="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/supportersPictures/heart.png">
-        </span>
+        </span> -->
         <a class="wishlist" href="">Wishlist</a>
       </div>
       <div class="supportSection" id="fans"></div>
@@ -66,23 +66,22 @@
   <div id="recommended"></div>
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://s3.amazonaws.com/namfecproject/bundle.js"></script>
-  <script src="https://s3.us-east-2.amazonaws.com/id12c4xzkv5chxzkcv4/bundle.js"></script>
+  <!-- <script src="https://s3.amazonaws.com/namfecproject/bundle.js"></script> -->
+  <script src="http://ec2-54-67-59-13.us-west-1.compute.amazonaws.com:3003/bundle.js"></script>
   <!-- <script src="https://s3.us-east-2.amazonaws.com/album-art-bandland/bundle.js"></script> -->
-  <script src="https://s3.us-east-2.amazonaws.com/album-art-bandland/bundle.js"></script>
   <script>
-    ReactDOM.render(
-      React.createElement(Music),
-      document.getElementById("mediaPlayer")
-    );
+    // ReactDOM.render(
+    //   React.createElement(Music),
+    //   document.getElementById("mediaPlayer")
+    // );
     ReactDOM.render(
       React.createElement(SupportSection),
       document.getElementById("fans")
     );
-    ReactDOM.render(
-      React.createElement(RecommendedAlbumsApp),
-      document.getElementById("recommended")
-    );
+    // ReactDOM.render(
+    //   React.createElement(RecommendedAlbumsApp),
+    //   document.getElementById("recommended")
+    // );
   </script>
 </body>
 
