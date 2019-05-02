@@ -66,14 +66,14 @@
   <div id="recommended"></div>
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-  <!-- <script src="https://s3.amazonaws.com/namfecproject/bundle.js"></script> -->
+  <script src="http://13.233.153.83:3002/bundle.js"></script>
   <script src="http://ec2-54-67-59-13.us-west-1.compute.amazonaws.com:3003/bundle.js"></script>
   <!-- <script src="https://s3.us-east-2.amazonaws.com/album-art-bandland/bundle.js"></script> -->
   <script>
-    // ReactDOM.render(
-    //   React.createElement(Music),
-    //   document.getElementById("mediaPlayer")
-    // );
+    ReactDOM.render(
+      React.createElement(Music),
+      document.getElementById("mediaPlayer")
+    );
     ReactDOM.render(
       React.createElement(SupportSection),
       document.getElementById("fans")
